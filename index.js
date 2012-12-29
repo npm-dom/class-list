@@ -68,7 +68,7 @@ function ClassList(elem) {
     function getTokens() {
         var className = elem.className
 
-        return className.split(" ").filter(isTruthy)
+        return className.split(" ").filter(Boolean)
     }
 
     function setTokens(list) {
@@ -83,8 +83,4 @@ function ClassList(elem) {
 
         delete list[length]
     }
-}
-
-function isTruthy(value) {
-    return !!value
 }
