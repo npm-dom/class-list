@@ -1,4 +1,5 @@
 // contains, add, remove, toggle
+var indexof = require('indexof')
 
 module.exports = ClassList
 
@@ -23,7 +24,7 @@ function ClassList(elem) {
 
     function add(token) {
         var list = getTokens()
-        if (list.indexOf(token) > -1) {
+        if (indexof(list, token) > -1) {
             return
         }
         list.push(token)
@@ -32,7 +33,7 @@ function ClassList(elem) {
 
     function remove(token) {
         var list = getTokens()
-            , index = list.indexOf(token)
+            , index = indexof(list, token)
 
         if (index === -1) {
             return
@@ -43,7 +44,7 @@ function ClassList(elem) {
     }
 
     function contains(token) {
-        return getTokens().indexOf(token) > -1
+        return indexof(getTokens(), token) > -1
     }
 
     function toggle(token) {
