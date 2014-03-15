@@ -1,5 +1,7 @@
 # class-list
 
+[![browser support][11]][12]
+
 A cross browser class list
 
 ## Example
@@ -23,3 +25,6 @@ cl.toggle("baz")
  - Raynos
 
 ## MIT Licenced
+
+  [11]: https://ci.testling.com/Raynos/class-list.png
+  [12]: https://ci.testling.com/Raynos/class-list
