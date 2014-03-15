@@ -20,7 +20,9 @@
     "indexof": "0.0.1"
   },
   "devDependencies": {
-    "browserify-server": "~1.2.2"
+    "browserify-server": "~1.2.2",
+    "tape": "~2.10.2",
+    "run-browser": "~1.2.0"
   },
   "licenses": [
     {
@@ -28,5 +30,33 @@
       "url": "http://github.com/Raynos/class-list/raw/master/LICENSE"
     }
   ],
-  "scripts": {}
+  "scripts": {
+    "test": "run-browser test/index.js"
+  },
+  "testling": {
+    "files": "tests/index.js",
+    "browsers": [
+      "iexplore/8.0",
+      "iexplore/9.0",
+      "iexplore/10.0",
+      "chrome/30.0",
+      "chrome/31.0",
+      "chrome/canary",
+      "firefox/10.0",
+      "firefox/15.0",
+      "firefox/20.0",
+      "firefox/21.0",
+      "firefox/22.0",
+      "firefox/23.0",
+      "firefox/24.0",
+      "firefox/25.0",
+      "firefox/nightly",
+      "opera/11.0",
+      "opera/17.0",
+      "opera/next",
+      "safari/6.0",
+      "iphone/6.0",
+      "ipad/6.0"
+    ]
+  }
 }
