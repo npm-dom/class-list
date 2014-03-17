@@ -28,3 +28,4 @@ cl.toggle("baz")
 
   [11]: https://ci.testling.com/Raynos/class-list.png
   [12]: https://ci.testling.com/Raynos/class-list
+
